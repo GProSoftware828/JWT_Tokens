@@ -26,7 +26,10 @@ const Protected = () => {
       {user.accesstoken ? (
         <div>
           <p className="protected-title">Hello from Australia!</p>
-          <img src={require('../assets/images/sydney-opera.jpg')} />
+          <img
+            className="protected-img"
+            src={require('../assets/images/sydney-opera.jpg')}
+          />
         </div>
       ) : (
         'log in to view'
