@@ -1,22 +1,21 @@
 import React from 'react';
 import { Link } from '@reach/router';
+import '../App.css';
 
 const Navigation = ({ logOutCallback }) => (
-  <div className="log-in-link">
-    <ul>
-      <li>
-        <Link to="/">Home</Link>
-      </li>
-      <li>
-        <Link to="/protected">Protected</Link>
-      </li>
-      <li>
-        <Link to="/register">Register</Link>
-      </li>
-      <li>
-        <button onClick={logOutCallback}>Log Out</button>
-      </li>
-    </ul>
+  <div className="nav-styles">
+    <Link className="nav-items" to="/">
+      Home
+    </Link>
+    <Link className="nav-items" to="/protected">
+      Website Content
+    </Link>
+    <Link className="nav-items" to="/register">
+      Register
+    </Link>
+    <button className="nav-items" onClick={logOutCallback}>
+      Log Out
+    </button>
   </div>
 );
 

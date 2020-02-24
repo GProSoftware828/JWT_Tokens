@@ -49,6 +49,7 @@ const Login = () => {
         <div className="login-input">
           <h2>Login</h2>
           <input
+            className="login-email"
             value={email}
             onChange={handleChange}
             type="text"
@@ -57,14 +58,17 @@ const Login = () => {
             autoComplete="email"
           />
           <input
+            className="login-password"
             value={password}
             onChange={handleChange}
-            type="text"
+            type="password"
             name="password"
             placeholder="Password"
             autoComplete="current-password"
           />
-          <button type="submit">Login</button>
+          <button className="login-button" type="submit">
+            Login
+          </button>
         </div>
       </form>
     </div>

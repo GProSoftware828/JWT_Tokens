@@ -17,11 +17,6 @@ const Protected = () => {
           }
         })
       ).json();
-      console.log('user: ', user);
-      console.log('result: ', result);
-      // if (user.accesstoken !== null) {
-      //   setContent('Protected data');
-      // }
     }
     fetchProtected();
   }, [user]);
@@ -30,7 +25,7 @@ const Protected = () => {
     <div>
       {user.accesstoken ? (
         <div>
-          <p>Hello from Australia!</p>
+          <p className="protected-title">Hello from Australia!</p>
           <img src={require('../assets/images/sydney-opera.jpg')} />
         </div>
       ) : (

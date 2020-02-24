@@ -36,28 +36,30 @@ const Register = () => {
   };
 
   return (
-    <div className="login-wrapper">
+    <div className="login-input">
       <form onSubmit={handleSubmit}>
-        <div className="login-input">
-          <h2>Register</h2>
-          <input
-            value={email}
-            onChange={handleChange}
-            type="text"
-            name="email"
-            placeholder="Email"
-            autoComplete="email"
-          />
-          <input
-            value={password}
-            onChange={handleChange}
-            type="text"
-            name="password"
-            placeholder="Password"
-            autoComplete="current-password"
-          />
-          <button type="submit">Register</button>
-        </div>
+        <h2 className="register-title">Register</h2>
+        <input
+          className="register-email"
+          value={email}
+          onChange={handleChange}
+          type="text"
+          name="email"
+          placeholder="Email"
+          autoComplete="email"
+        />
+        <input
+          className="register-password"
+          type="password"
+          value={password}
+          onChange={handleChange}
+          name="password"
+          placeholder="Password"
+          autoComplete="current-password"
+        />
+        <button className="register-button" type="submit">
+          Register
+        </button>
       </form>
     </div>
   );
