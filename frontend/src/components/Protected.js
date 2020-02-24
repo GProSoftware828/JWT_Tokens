@@ -26,7 +26,18 @@ const Protected = () => {
     fetchProtected();
   }, [user]);
 
-  return <div>{user.accesstoken ? 'protected data' : 'log in to view'}</div>;
+  return (
+    <div>
+      {user.accesstoken ? (
+        <div>
+          <p>Hello from Australia!</p>
+          <img src={require('../assets/images/sydney-opera.jpg')} />
+        </div>
+      ) : (
+        'log in to view'
+      )}
+    </div>
+  );
 };
 
 export default Protected;
