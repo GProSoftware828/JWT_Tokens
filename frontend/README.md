@@ -1,4 +1,4 @@
-### React frontend.
+### React frontend. JWT token login. Node with Express backend.
 
 This application uses the server backend to authenticate users that log in with a fake database built within the server files.
 
