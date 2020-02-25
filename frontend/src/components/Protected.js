@@ -32,7 +32,9 @@ const Protected = () => {
           </div>
         </div>
       ) : (
-        'log in to view'
+        <div className="protected-title">
+          Please log in to view this content.
+        </div>
       )}
     </div>
   );
