@@ -99,3 +99,7 @@ body {
 .protected-img {
   margin-left: 15%;
 }
+
+.todo-position {
+  margin: auto;
+}
